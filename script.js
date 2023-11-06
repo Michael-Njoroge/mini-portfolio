@@ -64,3 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load saved theme from local storage or default to light theme
   loadTheme();
 });
+
+
+/* ==========================================================================
+   When document is loading, do
+   ========================================================================== */
+
+$(window).on('load', function() {
+  handlePreloader();
+});
+
+function handlePreloader() {
+  if($('.preloader').length){
+    $('.preloader').delay(1000).fadeOut(500);
+  }
+}

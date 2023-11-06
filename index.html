@@ -11,9 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="/script.js" defer></script>
 </head>
 <body>
+
+    <div class="preloader">
+        <div class="icon">
+        </div>
+    </div>
 
     <section class="hero">
         <img id="toggleTheme" src="assets/theme_light.png" alt="theme icon" class="theme-btn">
@@ -43,11 +48,13 @@
             <button class="btn download-btn">Download CV</button>
         </a>
         <a href="mailto:mikethecoder12@gmail.com"><button class="btn contact-btn">Contact Me</button></a>
+        <a href="https://michael-njoroge.netlify.app"><button class="btn contact-btn">Complete Portfolio</button></a>
+
     </section>
 
     <section class="portfolio-skills">
         <div class="btn-bg">
-            <button class="btn-2" id="portfolio-btn active-btn">Portfolio</button>
+            <button class="btn-2 active-btn" id="portfolio-btn">Portfolio</button>
             <button class="btn-2" id="skills-btn">Skills</button>
         </div>
     </section>
@@ -99,4 +106,5 @@
       <p>&copy Michael Njoroge 2023</p>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
